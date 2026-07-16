@@ -1,3 +1,9 @@
 target/
 .idea/
 *.iml
+
+# frontend-tests (Playwright)
+frontend-tests/node_modules/
+frontend-tests/test-results/
+frontend-tests/playwright-report/
+frontend-tests/.cache/
