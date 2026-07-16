@@ -96,9 +96,17 @@ k6 run create-order-load-test.js
 
 ### Estrategia de pruebas en CI/CD (sección 10)
 
+[![ARSW Testing Pipeline](https://github.com/brloa05/Labotorio_Pruebas_BL_JC/actions/workflows/arsw-testing-pipeline.yml/badge.svg)](https://github.com/brloa05/Labotorio_Pruebas_BL_JC/actions/workflows/arsw-testing-pipeline.yml)
+
 `.github/workflows/arsw-testing-pipeline.yml` implementa el pipeline de la sección 10.1:
 se dispara en cada `push` a `main` y en cada `pull_request`, configura Java 17 (Temurin) y
 ejecuta `mvn test` (pruebas unitarias, de API e integración del backend).
+
+Pipeline verificado corriendo en GitHub Actions:
+[todas las ejecuciones](https://github.com/brloa05/Labotorio_Pruebas_BL_JC/actions/workflows/arsw-testing-pipeline.yml) ·
+[run #1 (✅ success)](https://github.com/brloa05/Labotorio_Pruebas_BL_JC/actions/runs/29461320733)
+
+![Ejecución exitosa del pipeline ARSW Testing Pipeline en GitHub Actions, job backend-tests en 33s](docs/img/github-actions-pipeline-run.png)
 
 Siguiendo la recomendación de la sección 10 sobre momentos de ejecución:
 
